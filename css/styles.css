@@ -577,10 +577,10 @@ img.pull-left {
 	align-items: center;
 	padding: 80px 10px;
 	width: 100%;
-	background-color: #1190be;
+	background-color: #FFFFFF;
 }
 #skills h1{
-	color: #fff;
+	color: #1190be;
 }
 .icon-wrap {
 	display: grid;
@@ -592,7 +592,8 @@ img.pull-left {
 
   }
   .icon {
-	background-color: #eee;
+	background-color: #1190be;
+	color: #FFFFFF;
 	padding: 40px 30px;
 	border-radius: 5px;
 	transition: transform 0.5s ease;
@@ -605,6 +606,8 @@ img.pull-left {
   }
   .icon img{
 	transform: scale(0.4);
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
   }
   .icon:hover {
 	transform: translateY(-10px);
@@ -2071,15 +2074,15 @@ header .logo a {
 #contact textarea {
 	width: 100%;
 	color: rgba(255, 255, 255, 0.7);
-	margin-bottom: 0;
-	border: none;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	margin-bottom: 10px;
+	border: 1px solid #1190be;
+border-radius: 5px;
 }
 
 #contact input[type="text"],
 #contact input[type="password"],
 #contact input[type="email"] {
-	height: 6.6rem;
+	height: 6rem;
 	padding: 1.8rem 2rem;
 }
 
