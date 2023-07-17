@@ -175,9 +175,11 @@ p.lead {
 		font-size: 1.7rem;
 	}
 }
-.fa-star{
-	color:rgb(236, 236, 57);
+
+.fa-star {
+	color: rgb(236, 236, 57);
 }
+
 em,
 i,
 strong,
@@ -494,7 +496,7 @@ img.pull-left {
 }
 
 .loader {
-	background-color: #000;
+	background-color: rgba(0, 0, 0, 0.95);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -567,18 +569,15 @@ img.pull-left {
 
 
 /* Reviews */
-#testimonials{
+#testimonials {
 	height: 100vh;
-	/* min-height: 500px; */
-	/* max-height: 80vh; */
-	width:100%;
-	/* display: flex;
-	justify-content: center;
-	align-items: center; */
+	width: 100%;
+
 	background-color: #1190be;
 	position: relative;
 	padding-bottom: 4rem;
 }
+
 .rbd-review-slider .rbd-preloader {
 	width: 36px;
 	height: 36px;
@@ -607,21 +606,20 @@ img.pull-left {
 	font-size: 18px;
 	line-height: 1.612;
 	border-radius: 4px;
-	box-shadow: 0 10px 30px -8px rgba(0,0,0,.5);
-	
+	box-shadow: 0 10px 30px -8px rgba(0, 0, 0, .5);
+	text-align: justify;
 	display: none;
-	/* vertical-align: top; */
-	transition: opacity .35s ease-out, transform .35s ease-out;;
+	transition: opacity .65s ease-out, transform .35s ease-out;
+	;
 	opacity: 1;
 	position: absolute;
 	left: 50%;
-	top:50%;
+	top: 50%;
 	transform: translate(-50%, -50%);
-	/* right: 0; */
 	margin: 0 auto;
 	overflow: hidden;
 	opacity: 0;
-	
+
 	background: #fff;
 	max-width: 600px;
 }
@@ -649,12 +647,12 @@ img.pull-left {
 }
 
 .rbd-review-slider .rbd-gravatar {
-  border-radius: 100%;
-  width: 100px;
-  float: left;
-  margin-right: 15px;
+	border-radius: 100%;
+	width: 100px;
+	float: left;
+	margin-right: 15px;
 	border: 6px solid transparent;
-	box-shadow: 0 3px 12px -2px rgba(0,0,0,.35);
+	box-shadow: 0 3px 12px -2px rgba(0, 0, 0, .35);
 }
 
 .rbd-footing {
@@ -662,15 +660,21 @@ img.pull-left {
 	text-align: center;
 }
 
-@keyframes round{   
-  25%{
-    opacity:1;
-  }
-  40%{
-    opacity:0;
-  }
-} 
+@keyframes round {
+	25% {
+		opacity: 1;
+	}
 
+	40% {
+		opacity: 0;
+	}
+}
+
+@media(max-width:768px) {
+	.rbd-review-slider .rbd-review {
+		width: 95%;
+	}
+}
 
 
 
@@ -1125,6 +1129,7 @@ input::-moz-focus-inner {
 .skill-bars li .percent85 {
 	width: 85%;
 }
+
 .skill-bars li .percent82 {
 	width: 82%;
 }
@@ -1176,8 +1181,8 @@ input::-moz-focus-inner {
 }
 
 .trading-view {
-	width: 30px;
-	height: 30px;
+	width: 27px;
+	height: 27px;
 	border-radius: 50%;
 	transition: .4s ease;
 }
@@ -1437,7 +1442,11 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #intro {
-	background: #151515 url(../images/intro-bg.jpg) no-repeat center center;
+	background-image: linear-gradient(rgba(5, 101, 139, 0.512), rgba(0, 0, 0, 0.5)),
+		url(../images/intro-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1709,16 +1718,16 @@ header .logo a {
 }
 
 .intro-info img {
-	height: 10rem;
-	width: 10rem;
+	height: 15rem;
+	width: 15rem;
 	border-radius: 50%;
-	margin: .9rem 0 0 0;
+	margin: 1rem;
 	float: left;
 }
 
 .intro-info .lead {
 	text-align: left;
-	padding-left: 13rem;
+	padding-left: 17rem;
 	font-size: 1.7rem;
 
 }
@@ -1841,9 +1850,10 @@ header .logo a {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
-.resume{
+.resume {
 	background-color: rgb(249, 249, 250);
 }
+
 .resume .resume-title {
 	font-size: 26px;
 	font-weight: 700;
@@ -1851,16 +1861,16 @@ header .logo a {
 	margin-bottom: 20px;
 	color: #45505b;
 	text-align: center;
-  }
-  
-  .resume .resume-item {
+}
+
+.resume .resume-item {
 	padding: 0 0 20px 20px;
 	margin-top: -2px;
 	border-left: 2px solid #1190be;
 	position: relative;
-  }
-  
-  .resume .resume-item h4 {
+}
+
+.resume .resume-item h4 {
 	line-height: 18px;
 	font-size: 18px;
 	font-weight: 600;
@@ -1868,30 +1878,30 @@ header .logo a {
 	font-family: "Poppins", sans-serif;
 	color: #1190be;
 	margin-bottom: 10px;
-  }
-  
-  .resume .resume-item h5 {
+}
+
+.resume .resume-item h5 {
 	font-size: 16px;
 	background: #f7f8f9;
 	padding: 5px 15px;
 	display: inline-block;
 	font-weight: 600;
 	margin-bottom: 10px;
-  }
-  
-  .resume .resume-item ul {
+}
+
+.resume .resume-item ul {
 	padding-left: 20px;
-  }
-  
-  .resume .resume-item ul li {
+}
+
+.resume .resume-item ul li {
 	padding-bottom: 10px;
-  }
-  
-  .resume .resume-item:last-child {
+}
+
+.resume .resume-item:last-child {
 	padding-bottom: 0;
-  }
-  
-  .resume .resume-item::before {
+}
+
+.resume .resume-item::before {
 	content: "";
 	position: absolute;
 	width: 16px;
@@ -1901,7 +1911,7 @@ header .logo a {
 	top: 0;
 	background: #fff;
 	border: 2px solid #1190be;
-  }
+}
 
 /* overlay at start */
 .mfp-fade.mfp-bg {
@@ -1952,42 +1962,6 @@ header .logo a {
 	transform: translateY(-100%);
 }
 
-#cta {
-	padding-top: 10.2rem;
-	padding-bottom: 9rem;
-	text-align: center;
-}
-
-#cta p.lead {
-	color: #6e6e6e;
-}
-
-.cta-content {
-	max-width: 640px;
-}
-
-.cta-thumb {
-	display: inline-block;
-	margin-bottom: 1.2rem;
-}
-
-.cta-thumb img {
-	height: 7.8rem;
-	width: 7.8rem;
-	border-radius: 50%;
-}
-
-@media only screen and (max-width:650px) {
-	.cta-content {
-		max-width: 650px;
-	}
-
-	.cta-content h2 {
-		font-size: 2.4rem;
-	}
-}
-
-
 /** 
  * ===================================================================
  * 15. services - (_layout.scss)
@@ -1995,7 +1969,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #services {
-	background: #000 url(../images/bg.jpg) no-repeat center;
+	background: #000 url(../images/b.jpg) no-repeat center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -2056,7 +2030,7 @@ header .logo a {
 	margin: 0 1rem 1.2rem;
 	padding: 40px 30px;
 	box-shadow: 3px 3px 1px #000;
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(0, 0, 0, 0.9);
 	border-radius: 10px;
 }
 
@@ -2104,6 +2078,16 @@ header .logo a {
 	background: var(--primary);
 }
 
+@media(max-width:768px) {
+	.services-list .service {
+		margin: auto;
+		width: 95%;
+		padding: 40px 15px;
+		box-shadow: 3px 3px 1px #000;
+		background: rgba(0, 0, 0, 0.8);
+	}
+}
+
 /** 
  * ===================================================================
  * 17. contact 
@@ -2130,7 +2114,7 @@ header .logo a {
 
 /* contact form */
 .contact-form {
-	max-width: 740px;
+	max-width: 800px;
 }
 
 .contact-form ::-webkit-input-placeholder {
@@ -2253,7 +2237,7 @@ header .logo a {
 #contact button.submitform:focus {
 	color: var(--primary);
 	background: #000000;
-	border:1px solid var(--primary);
+	border: 1px solid var(--primary);
 }
 
 
@@ -2282,59 +2266,13 @@ header .logo a {
 
 
 /** 
- * 18. footer - (_layout.scss)
+ * 18. footer - 
  */
 footer {
-	padding: 3rem 0;
-	font-size: 1.4rem;
-	background: #000;
-	border-top: 1px solid #333;
-	width: 100%;
-	margin: auto !important;
-	
-}
-footer .copyright{
-	display:flex;
-	justify-content: center !important;
-	text-align:center;
-	transform:translateX(-50%) !important;
-}
-footer a,
-footer a:visited {
-	color: #FFFFFF;
-}
-
-footer .row {
-	max-width: 900px;
-}
-
-
-footer .footer-social li a {
-	color: #FFFFFF;
-}
-
-footer .copyright span {
-	display: inline-block;
-	margin: 0 1.5rem;
-}
-
-
-
-/**
- * responsive:
- * footer
- * -------------------------------------------------------------------
- */
-@media only screen and (max-width:768px) {
-	footer {
-		text-align: center;
-		width: 100% !important;
-	}
-
-	.copyright span {
-		margin: 0 10px;
-	}
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 0 3rem;
 
 }
 
@@ -2387,5 +2325,25 @@ footer .copyright span {
 	color: #fff;
 }
 
-/* Review
-last because it's the last section I added to the site */
+/* Scrollbar styles */
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+	border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #1190be;
+}
