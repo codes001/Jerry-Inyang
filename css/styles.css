@@ -1368,7 +1368,7 @@ header .logo a {
 
 .intro-content h1 {
 	color: #FFFFFF;
-	font-size: 8.4rem;
+	font-size: 8.4rem !important;
 	line-height: 1.071;
 	max-width: 900px;
 	margin-top: 0;
@@ -1511,7 +1511,7 @@ header .logo a {
  */
 @media only screen and (max-width:1024px) {
 	.intro-content h1 {
-		font-size: 7.6rem;
+		font-size: 7.6rem !important;
 	}
 
 	.intro-social {
@@ -1529,7 +1529,7 @@ header .logo a {
 	}
 
 	.intro-content h1 {
-		font-size: 5.2rem;
+		font-size: 5.2rem !important;
 	}
 
 	.intro-content h5 {
@@ -1555,7 +1555,7 @@ header .logo a {
 	}
 
 	.intro-content h1 {
-		font-size: 4.6rem;
+		font-size: 4.6rem !important;
 		margin-bottom: .6rem;
 	}
 
@@ -1610,6 +1610,7 @@ header .logo a {
 	height: 15rem;
 	width: 15rem;
 	border-radius: 50%;
+	visibility: hidden;
 	margin: 1rem;
 	float: left;
 }
